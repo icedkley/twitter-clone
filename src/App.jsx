@@ -10,13 +10,13 @@ function App() {
   }
 
   function handleClick() {
-    setPosts([...posts, inputValue]);
+    setPosts([...posts, inputValue].reverse());
   }
 
   return (
     <>
       <header>
-        <h1>Logo</h1>
+        <h1>Meows</h1>
       </header>
 
       <div className="post_box_container">
@@ -25,7 +25,7 @@ function App() {
             onChange={handleChange}
             name="inputText"
             id="inputText"
-            placeholder="what's on your mind?"
+            placeholder="meow meow?"
           ></textarea>
           <button id="postBtn" onClick={handleClick}>
             post

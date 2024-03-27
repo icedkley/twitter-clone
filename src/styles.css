@@ -12,6 +12,7 @@
 header {
   width: 100vw;
   padding: 1rem;
+  position: fixed;
 }
 
 .post_box_container {
@@ -19,6 +20,7 @@ header {
   justify-content: center;
   display: flex;
   height: 20vh;
+  transition: 300ms ease-out;
 }
 
 .post_box {
@@ -73,6 +75,37 @@ textarea:focus {
 }
 
 .post {
-  /* border: 1px solid; */
+  padding: 1rem;
+  border: 1px solid;
   width: 28rem;
+}
+
+.profile_wrapper {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.profile {
+  width: 2rem;
+  border-radius: 10rem;
+  height: 2rem;
+
+  background-color: red;
+}
+
+.post_content {
+  padding: 1rem 0;
+}
+
+.actions_wrapper {
+  display: flex;
+  gap: 0.2rem;
+}
+
+.actions_wrapper button {
+  padding: 0.5rem;
+  border-radius: 1rem;
+  border: none;
+  background-color: deeppink;
 }
