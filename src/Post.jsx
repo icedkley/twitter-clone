@@ -1,4 +1,5 @@
 import React from "react";
+import TimeComponent from "./TimeComponent.jsx";
 
 function Post({ string }) {
   return (
@@ -6,7 +7,7 @@ function Post({ string }) {
       <div className="profile_wrapper">
         <div className="profile"></div>
         <h3>Meow ninja</h3>
-        <h6>Thur 12:09am</h6>
+        <TimeComponent></TimeComponent>
       </div>
       <p className="post_content">
         {string !== "" ? string : <p>Lorem ipsum</p>}

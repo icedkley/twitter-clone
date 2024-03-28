@@ -1,3 +1,10 @@
+:root {
+  --color-light: #eeeeee;
+  --color-blue: #7971ea;
+  --color-dark-lite: #393e46;
+  --color-dark: #222831;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -5,18 +12,20 @@
 }
 
 #root {
-  /* background-color: red; */
+  /* background-color: rgb(163, 163, 163); */
+  background-color: var(--color-light);
   overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
 }
 
 header {
   width: 100vw;
   padding: 1rem;
-  position: fixed;
+  display: block;
 }
 
 .post_box_container {
-  /* background-color: blue; */
   justify-content: center;
   display: flex;
   height: 20vh;
@@ -55,7 +64,7 @@ textarea:focus {
   position: absolute;
   right: 1rem;
   bottom: 1rem;
-  background-color: blue;
+  background-color: var(--color-blue);
   color: white;
   opacity: 100%;
 }
@@ -66,7 +75,6 @@ textarea:focus {
 }
 
 .news_feed {
-  /* background-color: red; */
   margin: 1rem;
   display: flex;
   flex-direction: column;
@@ -76,8 +84,7 @@ textarea:focus {
 
 .post {
   padding: 1rem;
-  border: 1px solid;
-  width: 28rem;
+  width: 40vw;
 }
 
 .profile_wrapper {
@@ -107,5 +114,4 @@ textarea:focus {
   padding: 0.5rem;
   border-radius: 1rem;
   border: none;
-  background-color: deeppink;
 }
